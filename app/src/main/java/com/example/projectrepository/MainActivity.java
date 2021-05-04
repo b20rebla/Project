@@ -2,6 +2,7 @@ package com.example.projectrepository;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, NextActivity.class);
+                startActivity(intent);
                 Log.d("TAG", "Starta Om Appen");
             }
         });
