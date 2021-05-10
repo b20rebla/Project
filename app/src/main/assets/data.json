@@ -1,0 +1,61 @@
+[{
+  "ID": "Apelsin",
+  "name": "Apelsin",
+  "type": "b20rebla",
+  "company": "",
+  "location": "Asien",
+  "category": "Frukt",
+  "size": 0,
+  "cost": 0,
+  "auxdata": null
+}, {
+  "ID": "Blåbär",
+  "name": "Blåbär",
+  "type": "b20rebla",
+  "company": "",
+  "location": "Sverige",
+  "category": "Bär",
+  "size": 0,
+  "cost": 0,
+  "auxdata": null
+}, {
+  "ID": "Hallon",
+  "name": "Hallon",
+  "type": "b20rebla",
+  "company": "",
+  "location": "Europa",
+  "category": "Bär",
+  "size": 0,
+  "cost": 0,
+  "auxdata": null
+}, {
+  "ID": "Jordgubbe",
+  "name": "Jordgubbe",
+  "type": "b20rebla",
+  "company": "",
+  "location": "Sverige",
+  "category": "Skenfrukt",
+  "size": 0,
+  "cost": 0,
+  "auxdata": null
+}, {
+  "ID": "Kiwi",
+  "name": "Kiwi",
+  "type": "b20rebla",
+  "company": "",
+  "location": "Kina",
+  "category": "Frukt",
+  "size": 0,
+  "cost": 0,
+  "auxdata": null
+}, {
+  "ID": "Passionsfrukt",
+  "name": "Passionsfrukt",
+  "type": "b20rebla",
+  "company": "",
+  "location": "Sydamerika",
+  "category": "Frukt",
+  "size": 0,
+  "cost": 0,
+  "auxdata": null
+}]
