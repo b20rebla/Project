@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 
 import com.google.gson.Gson;
 
@@ -22,10 +23,11 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MainActivity extends AppCompatActivity {
-    private ArrayList<Data> arrayMountain;
+    private ArrayList<Data> arrayData;
     private ArrayAdapter<Data> adapter;
 
     @SuppressWarnings("SameParameterValue")
@@ -46,6 +48,12 @@ public class MainActivity extends AppCompatActivity {
 
         String s = readFile("data.json");
         Log.d("MainActivity","The following text was found in textfile:\n\n"+s);
+
+        arrayData = new ArrayList<>();
+        adapter = new ArrayAdapter<Data>(MainActivity.this, R.layout.listitem, arrayData);
+
+        ListView myListView = findViewById(R.id.listview);
+        myListView.setAdapter(adapter);
 
 
         Button button = findViewById(R.id.button);
@@ -108,16 +116,15 @@ public class MainActivity extends AppCompatActivity {
             Gson gson = new Gson();
             Data[] tempdata = gson.fromJson(json, Data[].class);
 
+            arrayData.addAll(Arrays.asList(tempdata));
+
             for (int i = 0; i < tempdata.length; i++) {
                 Data m = tempdata[i];
                 Log.d("TAG", m.toString());
 
-
-
-
             }
 
-
+            adapter.notifyDataSetChanged();
 
         }
     }

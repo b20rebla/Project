@@ -8,4 +8,7 @@ public class Data {
     private String company;
     private String location;
     private String category;
+
+    @Override
+    public String toString() { return name; }
 }
