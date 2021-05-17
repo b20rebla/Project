@@ -16,7 +16,7 @@ public class NextActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_next);
 
-        String hej = new String("hej");
+        String hej = new String("Målgruppen för denna app är vegetarianer som vill vara mer medvetna om varifrån i världen frukter och bär är producerade.");
         Log.d("TAG", "hej");
         Toast.makeText(NextActivity.this, hej, Toast.LENGTH_SHORT).show();
 
