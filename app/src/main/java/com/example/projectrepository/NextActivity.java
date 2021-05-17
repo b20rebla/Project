@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class NextActivity extends AppCompatActivity {
 
@@ -14,6 +15,10 @@ public class NextActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_next);
+
+        String hej = new String("hej");
+        Log.d("TAG", "hej");
+        Toast.makeText(NextActivity.this, hej, Toast.LENGTH_SHORT).show();
 
         Button close = findViewById(R.id.close);
         close.setOnClickListener(new View.OnClickListener() {
